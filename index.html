@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="formulario.js"></script>
+    <title>Formulário</title>
+</head>
+<body>
+    <div>
+        <h1>Formulário</h1>
+    </div>
+    <div>
+            <label for="nome">Nome Completo:</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required><p></p>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu email" required><p></p>
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required><p></p>
+            <label for="nascimento">Nascimento:</label>
+            <input type="date" name="nascimento" id="nascimento" required><p></p>
+            <label for="estado">UF:</label>
+            <select name="estado" id="estado">
+                <option value="AC" selected>Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espirito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraiba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí­</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="RR">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantis</option>
+            </select> <p></p>
+            <button onclick="salvar()">Salvar</button>
+            <button onclick="editar()">Editar</button>
+    </div>
+    <div>
+        <table id="myTable">
+            <tr> 
+                    <td>Name</td>
+                    <td>Email</td>
+                    <td>Nascimento</td>
+                    <td>UF</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
